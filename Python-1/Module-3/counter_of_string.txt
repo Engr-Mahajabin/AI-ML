@@ -1,0 +1,5 @@
+Total lines: 2
+Number of words: [1, 3]
+Total words: 4
+Character count: [15, 17]
+Total character: 32

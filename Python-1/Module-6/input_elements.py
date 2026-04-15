@@ -1,0 +1,23 @@
+import streamlit as st
+
+st.title("Input your information")
+st.divider()
+name = st.text_input("Enter your name")
+st.write("Your name is: ",name)
+print(type(name))
+st.divider()
+age= st.number_input("Enter your age")
+print(type(age))
+st.write("Your age is: ",age)
+password = st.text_input("Enter your name: ",type="password")
+print(type(password))
+st.write("Your password is: ",password)
+pressed=st.button("Enter to confirm",type="primary")
+if pressed:
+    st.write(f"Your name is {name} and your age is{age}")
+selected = st.selectbox("Choose your profession: ",("Student","Employee","Businessman"))
+print(type(selected))
+st.write("You selected",selected)
+st.text_area("Write something")
+st.data_input("Pick a date")
+st.file_uploader("Upload file")
